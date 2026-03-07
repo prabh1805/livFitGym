@@ -32,7 +32,7 @@ const StarRating = ({ count }) => {
   return (
     <div className="flex gap-1.5 mb-6">
       {[...Array(count)].map((_, i) => (
-        <svg key={i} className="w-5 h-5 text-[#ffcc00]" fill="currentColor" viewBox="0 0 20 20">
+        <svg key={i} className="w-5 h-5 text-[#ff0000]" fill="currentColor" viewBox="0 0 20 20">
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
         </svg>
       ))}
@@ -52,7 +52,7 @@ const SuccessStoriesSection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4">
-            Member <span className="text-[#ffcc00]">Success Stories</span>
+            Member <span className="text-[#ff0000]">Success Stories</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-light">
             Real results from our dedicated community
@@ -68,7 +68,7 @@ const SuccessStoriesSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.6, delay: index * 0.2, type: "spring", stiffness: 100 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-[#121212] border border-neutral-800 rounded-3xl p-8 lg:p-10 flex flex-col hover:border-[#ffcc00]/30 transition-all duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(255,204,0,0.05)] relative"
+              className="bg-[#121212] border border-neutral-800 rounded-3xl p-8 lg:p-10 flex flex-col hover:border-[#ff0000]/30 transition-all duration-300 shadow-lg hover:shadow-[0_10px_30px_rgba(255,0,0,0.05)] relative"
             >
               {/* Quote Icon */}
               <div className="absolute top-6 right-8 text-neutral-800">

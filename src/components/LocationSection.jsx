@@ -13,7 +13,7 @@ const LocationSection = () => {
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">
-            Our <span className="text-[#ffcc00]">Location</span>
+            Our <span className="text-[#ff0000]">Location</span>
           </h2>
         </motion.div>
 
@@ -26,15 +26,15 @@ const LocationSection = () => {
             transition={{ duration: 0.6 }}
             className="w-full lg:w-2/5 p-8 md:p-12 flex flex-col justify-center"
           >
-            <div className="bg-[#ffcc00]/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
-              <svg className="w-8 h-8 text-[#ffcc00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="bg-[#ff0000]/10 w-16 h-16 rounded-2xl flex items-center justify-center mb-8">
+              <svg className="w-8 h-8 text-[#ff0000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
               </svg>
             </div>
             
             <h3 className="text-3xl lg:text-4xl font-black text-white uppercase tracking-wide mb-4">
-              LIV FIT GYM <span className="text-[#ffcc00] block mt-1">Kalkaji</span>
+              LIV FIT GYM <span className="text-[#ff0000] block mt-1">Kalkaji</span>
             </h3>
             
             <p className="text-gray-300 text-lg mb-8 font-light leading-relaxed">
@@ -48,7 +48,7 @@ const LocationSection = () => {
               href="https://maps.google.com/?q=LIV+FIT+GYM+Kalkaji" 
               target="_blank" 
               rel="noreferrer"
-              className="inline-flex items-center justify-center bg-[#ffcc00] text-black px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 max-w-max shadow-[0_4px_20px_rgba(255,204,0,0.3)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.4)]"
+              className="inline-flex items-center justify-center bg-[#ff0000] text-black px-8 py-4 rounded-xl font-bold uppercase tracking-wider hover:bg-white hover:scale-105 transition-all duration-300 max-w-max shadow-[0_4px_20px_rgba(255,0,0,0.3)] hover:shadow-[0_4px_25px_rgba(255,255,255,0.4)]"
             >
               Get Directions
             </a>

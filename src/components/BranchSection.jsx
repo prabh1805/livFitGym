@@ -7,7 +7,7 @@ const BranchSection = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-black text-white uppercase tracking-tight mb-4">
-            Our <span className="text-[#ffcc00]">Branch</span>
+            Our <span className="text-[#ff0000]">Branch</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-light">
             Find your nearest LIV FIT GYM location
@@ -18,11 +18,11 @@ const BranchSection = () => {
           {branchesData.map((branch) => (
             <div 
               key={branch.id} 
-              className="bg-[#121212] border border-neutral-800 rounded-2xl p-8 hover:border-[#ffcc00]/50 transition-all duration-300 md:col-start-2 lg:col-start-2"
+              className="bg-[#121212] border border-neutral-800 rounded-2xl p-8 hover:border-[#ff0000]/50 transition-all duration-300 md:col-start-2 lg:col-start-2"
             >
               <div className="flex items-center mb-6">
-                <div className="bg-[#ffcc00]/10 p-3 rounded-full mr-4">
-                  <svg className="w-8 h-8 text-[#ffcc00]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <div className="bg-[#ff0000]/10 p-3 rounded-full mr-4">
+                  <svg className="w-8 h-8 text-[#ff0000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                   </svg>
@@ -41,7 +41,7 @@ const BranchSection = () => {
               <a 
                 href={branch.mapUrl}
                 target="_blank" rel="noopener noreferrer"
-                className="inline-flex items-center justify-center w-full bg-transparent border border-[#ffcc00] text-[#ffcc00] px-6 py-3 rounded-xl font-semibold tracking-wide hover:bg-[#ffcc00] hover:text-black transition-colors duration-300"
+                className="inline-flex items-center justify-center w-full bg-transparent border border-[#ff0000] text-[#ff0000] px-6 py-3 rounded-xl font-semibold tracking-wide hover:bg-[#ff0000] hover:text-black transition-colors duration-300"
               >
                 View on Map
               </a>

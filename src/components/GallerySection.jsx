@@ -24,7 +24,7 @@ const GallerySection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4">
-            Gym <span className="text-[#ffcc00]">Gallery</span>
+            Gym <span className="text-[#ff0000]">Gallery</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-light">
             Take a look inside our premium fitness facility
@@ -41,7 +41,7 @@ const GallerySection = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05, zIndex: 10 }}
               onClick={() => setSelectedImage(src)}
-              className="relative aspect-[4/3] rounded-3xl overflow-hidden group cursor-pointer border-2 border-transparent hover:border-[#ffcc00]/50 transition-all duration-500 shadow-lg hover:shadow-[0_0_30px_rgba(255,204,0,0.3)]"
+              className="relative aspect-[4/3] rounded-3xl overflow-hidden group cursor-pointer border-2 border-transparent hover:border-[#ff0000]/50 transition-all duration-500 shadow-lg hover:shadow-[0_0_30px_rgba(255,0,0,0.3)]"
             >
               <img 
                 src={src} 
