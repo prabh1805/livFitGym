@@ -15,7 +15,7 @@ const StatCounter = ({ end, label, suffix = '+' }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <span className="text-3xl md:text-5xl font-black text-[#ff0000] mb-2 font-mono">
+      <span className="text-3xl md:text-5xl font-black text-accent mb-2 font-mono">
         {count}{suffix}
       </span>
       <span className="text-gray-400 text-xs md:text-sm font-semibold uppercase tracking-widest">
@@ -58,9 +58,9 @@ const HeroSection = () => {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-6 px-4 py-1.5 rounded-full border border-[#ff0000]/30 bg-[#ff0000]/10 backdrop-blur-sm"
+            className="mb-6 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-sm"
           >
-            <span className="text-[#ff0000] text-xs font-bold tracking-widest uppercase">Premium Fitness Experience</span>
+            <span className="text-accent text-xs font-bold tracking-widest uppercase">Premium Fitness Experience</span>
           </motion.div>
 
           {/* Staggered text reveal */}
@@ -79,7 +79,7 @@ const HeroSection = () => {
               initial={{ y: "100%" }}
               animate={{ y: 0 }}
               transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-[#ff0000] uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(255,0,0,0.5)]"
+              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-accent uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(var(--accent-rgb),0.5)]"
             >
               Stay Strong.
             </motion.h1>
@@ -101,9 +101,9 @@ const HeroSection = () => {
             className="relative group mb-20"
           >
             {/* Glow Behind Button */}
-            <div className="absolute -inset-1 bg-[#ff0000] rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
+            <div className="absolute -inset-1 bg-accent rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
             <button 
-              className="relative bg-[#ff0000] text-white px-10 py-5 sm:px-14 sm:py-6 rounded-full font-black text-lg sm:text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
+              className="relative bg-accent text-white px-10 py-5 sm:px-14 sm:py-6 rounded-full font-black text-lg sm:text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
             >
               Start Your Fitness Journey
             </button>

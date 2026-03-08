@@ -23,8 +23,8 @@ const FacilityIcon = ({ name }) => {
   };
 
   return (
-    <div className="w-14 h-14 bg-neutral-900 rounded-2xl flex items-center justify-center mb-6 border border-neutral-800 group-hover:border-[#ff0000] group-hover:shadow-[0_0_15px_rgba(255,0,0,0.4)] transition-all duration-300">
-      <svg className="w-7 h-7 text-[#ff0000]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <div className="w-14 h-14 bg-neutral-900 rounded-2xl flex items-center justify-center mb-6 border border-neutral-800 group-hover:border-accent group-hover:shadow-[0_0_15px_rgba(var(--accent-rgb),0.4)] transition-all duration-300">
+      <svg className="w-7 h-7 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         {getIconSvg()}
       </svg>
     </div>
@@ -43,7 +43,7 @@ const FacilitiesSection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4">
-            World-Class <span className="text-[#ff0000]">Facilities</span>
+            World-Class <span className="text-accent">Facilities</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-light">
             Everything you need to reach your fitness goals under one roof
@@ -59,7 +59,7 @@ const FacilitiesSection = () => {
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ y: -8, scale: 1.02 }}
-              className="bg-[#121212] border border-neutral-800 rounded-3xl p-8 hover:border-[#ff0000]/50 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(255,0,0,0.1)] group cursor-default h-full"
+              className="bg-[#121212] border border-neutral-800 rounded-3xl p-8 hover:border-accent/50 transition-all duration-300 hover:shadow-[0_10px_30px_rgba(var(--accent-rgb),0.1)] group cursor-default h-full"
             >
               <FacilityIcon name={facility.icon} />
               <h3 className="text-xl font-bold text-white mb-3 tracking-wide">{facility.title}</h3>

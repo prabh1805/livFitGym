@@ -3,11 +3,14 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --accent-color: #FFC107;
+  --accent-rgb: 255, 193, 7;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-accent: var(--accent-color);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
