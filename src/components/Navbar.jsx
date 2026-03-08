@@ -25,15 +25,15 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black/95 backdrop-blur-md py-2 shadow-[0_4px_30px_rgba(0,0,0,0.5)]' : 'bg-transparent pt-2 pb-6'}`}>
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16 md:h-20">
+        <div className="flex justify-between items-center h-20 md:h-28">
           <div className="flex-shrink-0 -ml-2 sm:-ml-4">
             <a href="#home" className="flex items-center">
               <Image 
                 src="/assets/livfit_logo_new.svg" 
                 alt="LIV FIT GYM Logo" 
-                width={200} 
-                height={70} 
-                className="h-14 md:h-20 w-auto object-contain"
+                width={320} 
+                height={112} 
+                className="h-20 md:h-32 w-auto object-contain"
                 priority
               />
             </a>
