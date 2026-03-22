@@ -1,11 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import PaymentModal from './PaymentModal';
 
 const membershipData = [
   {
     id: 1,
     title: 'Monthly',
-    price: '₹2500',
+    price: '₹1',
     duration: '+ GST extra',
     isPopular: false,
     benefits: [
@@ -57,6 +58,14 @@ const membershipData = [
 ];
 
 const MembershipSection = () => {
+  const [selectedPlan, setSelectedPlan] = useState(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleGetStarted = (plan) => {
+    setSelectedPlan(plan);
+    setIsModalOpen(true);
+  };
+
   return (
     <section id="memberships" className="py-24 bg-[#050505] border-t border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -68,7 +77,7 @@ const MembershipSection = () => {
           className="text-center max-w-3xl mx-auto mb-20"
         >
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-black text-white uppercase tracking-tight mb-4">
-            Membership <span className="text-accent">Plans</span>
+            Membership <span className="text-[#ff0000]">Plans</span>
           </h2>
           <p className="text-gray-400 text-lg md:text-xl font-light">
             Choose the plan that fits your fitness journey
@@ -86,18 +95,18 @@ const MembershipSection = () => {
               whileHover={{ scale: 1.03, y: -10 }}
               className={`relative bg-[#121212] rounded-3xl p-8 flex flex-col border transition-colors duration-300 group ${
                 plan.isPopular 
-                  ? 'border-accent shadow-[0_0_30px_rgba(var(--accent-rgb),0.15)] z-10' 
+                  ? 'border-[#ff0000] shadow-[0_0_30px_rgba(255,0,0,0.15)] z-10' 
                   : 'border-neutral-800 hover:border-neutral-600 mt-0 lg:mt-4'
               }`}
             >
               {plan.isPopular && (
-                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-accent text-black px-6 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-[0_0_15px_rgba(var(--accent-rgb),0.5)]">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#ff0000] text-white px-6 py-1.5 rounded-full text-xs font-black uppercase tracking-widest shadow-[0_0_15px_rgba(255,0,0,0.5)]">
                   Most Popular
                 </div>
               )}
               
               <div className="mb-8">
-                <h3 className={`text-sm uppercase tracking-widest font-bold mb-2 ${plan.isPopular ? 'text-accent' : 'text-gray-400'}`}>
+                <h3 className={`text-sm uppercase tracking-widest font-bold mb-2 ${plan.isPopular ? 'text-[#ff0000]' : 'text-gray-400'}`}>
                   {plan.title}
                 </h3>
                 <div className="flex flex-col text-white">
@@ -110,7 +119,7 @@ const MembershipSection = () => {
                 <ul className="space-y-4 mb-8">
                   {plan.benefits.map((benefit, i) => (
                     <li key={i} className="flex items-start text-gray-300 font-light text-sm sm:text-base group-hover:text-white transition-colors duration-300">
-                      <svg className="w-5 h-5 text-accent mr-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-5 h-5 text-[#ff0000] mr-3 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                       </svg>
                       {benefit}
@@ -119,17 +128,26 @@ const MembershipSection = () => {
                 </ul>
               </div>
 
-              <button className={`w-full py-4 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 shadow-md ${
-                plan.isPopular 
-                  ? 'bg-accent text-black hover:bg-white hover:shadow-[0_0_20px_rgba(255,255,255,0.4)]' 
-                  : 'bg-transparent border border-neutral-600 text-white hover:bg-white hover:text-black hover:border-white'
-              }`}>
+              <button 
+                onClick={() => handleGetStarted(plan)}
+                className={`w-full py-4 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 shadow-md ${
+                  plan.isPopular 
+                    ? 'bg-[#ff0000] text-white hover:bg-red-700 hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]' 
+                    : 'bg-transparent border border-neutral-600 text-white hover:bg-white hover:text-black hover:border-white'
+                }`}
+              >
                 Get Started
               </button>
             </motion.div>
           ))}
         </div>
       </div>
+
+      <PaymentModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        plan={selectedPlan} 
+      />
     </section>
   );
 };
