@@ -6,7 +6,7 @@ const membershipData = [
   {
     id: 1,
     title: 'Monthly',
-    price: '₹1',
+    price: '₹2500',
     duration: '+ GST extra',
     isPopular: false,
     benefits: [
