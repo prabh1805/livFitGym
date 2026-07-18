@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import PaymentModal from './PaymentModal';
 
 const membershipData = [
   {
@@ -58,14 +57,6 @@ const membershipData = [
 ];
 
 const MembershipSection = () => {
-  const [selectedPlan, setSelectedPlan] = useState(null);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const handleGetStarted = (plan) => {
-    setSelectedPlan(plan);
-    setIsModalOpen(true);
-  };
-
   return (
     <section id="memberships" className="py-24 bg-[#050505] border-t border-neutral-900 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -128,26 +119,20 @@ const MembershipSection = () => {
                 </ul>
               </div>
 
-              <button 
-                onClick={() => handleGetStarted(plan)}
-                className={`w-full py-4 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 shadow-md ${
-                  plan.isPopular 
-                    ? 'bg-[#ff0000] text-white hover:bg-red-700 hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]' 
+              <a
+                href="#contact"
+                className={`w-full py-4 rounded-xl font-bold tracking-widest uppercase text-sm transition-all duration-300 shadow-md text-center ${
+                  plan.isPopular
+                    ? 'bg-[#ff0000] text-white hover:bg-red-700 hover:shadow-[0_0_20px_rgba(255,0,0,0.4)]'
                     : 'bg-transparent border border-neutral-600 text-white hover:bg-white hover:text-black hover:border-white'
                 }`}
               >
                 Get Started
-              </button>
+              </a>
             </motion.div>
           ))}
         </div>
       </div>
-
-      <PaymentModal 
-        isOpen={isModalOpen} 
-        onClose={() => setIsModalOpen(false)} 
-        plan={selectedPlan} 
-      />
     </section>
   );
 };
