@@ -4,6 +4,7 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import HeroSection from '../components/HeroSection';
 import FacilitiesSection from '../components/FacilitiesSection';
+import FounderSection from '../components/FounderSection';
 import MembershipSection from '../components/MembershipSection';
 import SuccessStoriesSection from '../components/SuccessStoriesSection';
 import GallerySection from '../components/GallerySection';
@@ -17,6 +18,7 @@ const Home = () => {
       <Navbar />
       <HeroSection />
       <FacilitiesSection />
+      <FounderSection />
       <MembershipSection />
       <SuccessStoriesSection />
       <GallerySection />

@@ -64,26 +64,22 @@ const HeroSection = () => {
           </motion.div>
 
           {/* Staggered text reveal */}
-          <div className="overflow-hidden mb-2">
-            <motion.h1 
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-none"
-            >
-              Train Hard,
-            </motion.h1>
-          </div>
-          <div className="overflow-hidden mb-8">
-            <motion.h1 
-              initial={{ y: "100%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-              className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-accent uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(var(--accent-rgb),0.5)]"
-            >
-              Stay Strong.
-            </motion.h1>
-          </div>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            className="mb-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-none"
+          >
+            Train Hard,
+          </motion.h1>
+          <motion.h1
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+            className="mb-8 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-accent uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(var(--accent-rgb),0.5)]"
+          >
+            Stay Strong.
+          </motion.h1>
           
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -116,9 +112,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
             className="w-full max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 border-t border-neutral-800/80 pt-10"
           >
-            <StatCounter end={300} label="Active Members" suffix="+" />
-            <StatCounter end={4} label="Expert Trainers" suffix="+" />
-            <StatCounter end={5} label="Years Experience" suffix="+" />
+            <StatCounter end={700} label="Active Members" suffix="+" />
+            <StatCounter end={8} label="Expert Trainers" suffix="+" />
+            <StatCounter end={17} label="Years Experience" suffix="+" />
           </motion.div>
 
         </div>
