@@ -5,7 +5,7 @@ const membershipData = [
   {
     id: 1,
     title: 'Monthly',
-    price: '₹2500',
+    price: '₹2000',
     duration: '+ GST extra',
     isPopular: false,
     benefits: [
@@ -18,7 +18,7 @@ const membershipData = [
   {
     id: 2,
     title: '3 Months',
-    price: '₹6500',
+    price: '₹5500',
     duration: '+ GST extra',
     isPopular: true,
     benefits: [
@@ -31,7 +31,7 @@ const membershipData = [
   {
     id: 3,
     title: '6 Months',
-    price: '₹11500',
+    price: '₹9500',
     duration: '+ GST extra',
     isPopular: false,
     benefits: [
@@ -44,7 +44,7 @@ const membershipData = [
   {
     id: 4,
     title: 'Yearly',
-    price: '₹16000',
+    price: '₹13000',
     duration: '+ GST extra',
     isPopular: false,
     benefits: [
