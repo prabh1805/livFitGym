@@ -103,7 +103,7 @@ const HeroSection = () => {
             {/* Glow Behind Button */}
             <div className="absolute -inset-1 bg-accent rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
             <button 
-              className="relative bg-accent text-white px-10 py-5 sm:px-14 sm:py-6 rounded-full font-black text-lg sm:text-xl uppercase tracking-wider hover:bg-white hover:text-black transition-colors duration-300"
+              className="relative bg-accent text-black px-10 py-5 sm:px-14 sm:py-6 rounded-full font-black text-lg sm:text-xl uppercase tracking-wider hover:bg-white transition-colors duration-300"
             >
               Start Your Fitness Journey
             </button>
