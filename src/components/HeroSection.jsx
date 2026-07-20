@@ -50,7 +50,7 @@ const HeroSection = () => {
       {/* Content */}
       <motion.div 
         style={{ opacity }}
-        className="relative z-10 w-full px-4 pt-20 pb-10 flex flex-col items-center justify-center min-h-screen"
+        className="relative z-10 w-full px-4 pt-28 pb-10 flex flex-col items-center justify-start lg:justify-center min-h-screen"
       >
         <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           
@@ -68,7 +68,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
-            className="mb-2 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-none"
+            className="mb-2 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-white uppercase tracking-tighter leading-none"
           >
             Train Hard,
           </motion.h1>
@@ -76,7 +76,7 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
-            className="mb-8 text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-accent uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(var(--accent-rgb),0.5)]"
+            className="mb-8 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black text-accent uppercase tracking-tighter leading-none drop-shadow-[0_0_25px_rgba(var(--accent-rgb),0.5)]"
           >
             Stay Strong.
           </motion.h1>
@@ -98,8 +98,8 @@ const HeroSection = () => {
           >
             {/* Glow Behind Button */}
             <div className="absolute -inset-1 bg-accent rounded-full blur opacity-40 group-hover:opacity-100 transition duration-500"></div>
-            <button 
-              className="relative bg-accent text-black px-10 py-5 sm:px-14 sm:py-6 rounded-full font-black text-lg sm:text-xl uppercase tracking-wider hover:bg-white transition-colors duration-300"
+            <button
+              className="relative bg-accent text-black px-6 py-3.5 sm:px-10 sm:py-5 md:px-14 md:py-6 rounded-full font-black text-sm sm:text-lg md:text-xl uppercase tracking-wide sm:tracking-wider whitespace-nowrap hover:bg-white transition-colors duration-300"
             >
               Start Your Fitness Journey
             </button>
