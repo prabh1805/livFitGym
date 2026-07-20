@@ -60,7 +60,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             className="mb-6 px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 backdrop-blur-sm"
           >
-            <span className="text-accent text-xs font-bold tracking-widest uppercase">Premium Fitness Experience</span>
+            <span className="text-accent text-xs font-bold tracking-widest uppercase">Premium Fitness Experience in Kalkaji, New Delhi</span>
           </motion.div>
 
           {/* Staggered text reveal */}
@@ -91,7 +91,7 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
             className="text-gray-300 text-lg sm:text-2xl max-w-3xl mx-auto mb-12 font-medium tracking-wide"
           >
-            Push your limits and redefine your strength with top-tier equipment and expert coaching.
+            Push your limits and redefine your strength at LIV FIT GYM, Kalkaji's premier fitness destination with top-tier equipment and expert coaching.
           </motion.p>
 
           <motion.div

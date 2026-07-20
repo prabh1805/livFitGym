@@ -62,9 +62,9 @@ const SuccessStoriesSection = () => {
                 whileHover={{ scale: 1.05, y: -10 }}
                 className="w-[280px] sm:w-[350px] flex-shrink-0 group relative aspect-[4/5] rounded-[32px] overflow-hidden border border-neutral-800/50"
               >
-                <img 
-                  src={story.image} 
-                  alt={story.name} 
+                <img
+                  src={story.image}
+                  alt={`${story.name} - LIV FIT GYM Kalkaji member success story`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 

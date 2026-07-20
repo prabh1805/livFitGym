@@ -59,9 +59,9 @@ const GallerySection = () => {
                 onClick={() => setSelectedImage(src)}
                 className="relative w-[300px] sm:w-[400px] aspect-[4/3] rounded-3xl overflow-hidden group cursor-pointer border-2 border-transparent hover:border-accent/50 transition-all duration-500 shadow-lg hover:shadow-[0_0_30px_rgba(var(--accent-rgb),0.2)]"
               >
-                <img 
-                  src={src} 
-                  alt={`Gym facility ${index + 1}`}
+                <img
+                  src={src}
+                  alt={`LIV FIT GYM Kalkaji - gym floor and equipment photo ${(index % galleryImages.length) + 1}`}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   loading="lazy"
                 />
