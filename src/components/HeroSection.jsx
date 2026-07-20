@@ -116,9 +116,9 @@ const HeroSection = () => {
             transition={{ duration: 0.8, delay: 0.7, ease: "easeOut" }}
             className="w-full max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12 border-t border-neutral-800/80 pt-10"
           >
-            <StatCounter end={10} label="Active Members" suffix="K+" />
-            <StatCounter end={50} label="Expert Trainers" suffix="+" />
-            <StatCounter end={15} label="Years Experience" suffix="+" />
+            <StatCounter end={300} label="Active Members" suffix="+" />
+            <StatCounter end={4} label="Expert Trainers" suffix="+" />
+            <StatCounter end={5} label="Years Experience" suffix="+" />
           </motion.div>
 
         </div>

@@ -71,7 +71,7 @@ const localBusinessJsonLd = {
   image: `${siteUrl}/assets/gymGallery/DSC_0052.jpeg`,
   url: siteUrl,
   telephone: "+91-9873500250",
-  email: "contact@livfitgym.com",
+  email: "livfitwithnomyths@gmail.com",
   address: {
     "@type": "PostalAddress",
     streetAddress: "59/2 Guru Ravidas Marg, Opp HDFC Bank",

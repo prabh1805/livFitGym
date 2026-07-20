@@ -63,7 +63,7 @@ const Navbar = () => {
               <span className="text-sm font-semibold tracking-wide">+91 9873500250</span>
             </a>
 
-            <a href="mailto:contact@livfitgym.com" className="flex items-center text-gray-300 hover:text-accent transition-colors">
+            <a href="mailto:livfitwithnomyths@gmail.com" className="flex items-center text-gray-300 hover:text-accent transition-colors">
               <svg className="w-5 h-5 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
@@ -108,11 +108,11 @@ const Navbar = () => {
               </svg>
               +91 9873500250
             </a>
-            <a href="mailto:contact@livfitgym.com" className="flex items-center text-gray-300 hover:text-accent">
+            <a href="mailto:livfitwithnomyths@gmail.com" className="flex items-center text-gray-300 hover:text-accent">
               <svg className="w-5 h-5 mr-2 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
               </svg>
-              contact@livfitgym.com
+              livfitwithnomyths@gmail.com
             </a>
           </div>
         </div>

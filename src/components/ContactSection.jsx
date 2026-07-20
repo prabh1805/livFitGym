@@ -37,8 +37,8 @@ const ContactSection = () => {
             </div>
             <h3 className="text-xl font-bold text-white mb-2 tracking-wide">Email Us</h3>
             <p className="text-gray-400 font-light mb-4">We'll respond within 24 hours.</p>
-            <a href="mailto:contact@livfitgym.com" className="text-xl font-semibold text-accent hover:text-white transition-colors duration-300">
-              contact@livfitgym.com
+            <a href="mailto:livfitwithnomyths@gmail.com" className="text-xl font-semibold text-accent hover:text-white transition-colors duration-300">
+              livfitwithnomyths@gmail.com
             </a>
           </div>
         </div>
