@@ -38,12 +38,14 @@ const FounderSection = () => {
               Shivam Kumar
             </h2>
             <p className="text-gray-300 text-lg leading-relaxed mb-6 font-light max-w-2xl mx-auto lg:mx-0">
-              LIV FIT GYM was built on a simple belief — that real results come from honest coaching,
-              not gimmicks. With 17+ years in the fitness industry, Shivam has personally guided
-              hundreds of members in Kalkaji toward stronger, healthier lives, one honest rep at a time.
+              Fitness became my calling long before it became my career. Over 17+ years of
+              coaching, I've watched every trend and fad come and go — and I built LIV FIT GYM
+              around the one thing that never changes: honest, disciplined training that actually
+              works. No gimmicks, no shortcuts — just a coach who tells you the truth and a plan
+              built around you.
             </p>
             <p className="text-accent text-xl font-bold italic">
-              "No fads, no myths — just results that last."
+              "Strength isn't sold. It's earned — one honest rep at a time."
             </p>
           </motion.div>
         </div>
