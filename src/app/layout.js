@@ -16,14 +16,16 @@ const siteUrl = "https://livfitgym.in";
 export const metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "LIV FIT GYM Kalkaji | Best Gym in Kalkaji, New Delhi",
+    default: "LIV FIT GYM | Kalkaji & Jaitpur, New Delhi",
     template: "%s | LIV FIT GYM Kalkaji",
   },
   description:
-    "LIV FIT GYM in Kalkaji, New Delhi offers premium gym equipment, expert trainers, and flexible membership plans. Visit the top-rated gym near Kalkaji today.",
+    "LIV FIT GYM offers premium equipment, expert trainers, and flexible memberships at our Kalkaji and Jaitpur locations in New Delhi.",
   keywords: [
     "gym in Kalkaji",
     "gym near Kalkaji",
+    "gym in Jaitpur",
+    "gym in Badarpur",
     "best gym in Kalkaji",
     "gym New Delhi",
     "fitness center Kalkaji",
@@ -35,9 +37,9 @@ export const metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "LIV FIT GYM Kalkaji | Best Gym in Kalkaji, New Delhi",
+    title: "LIV FIT GYM | Kalkaji & Jaitpur, New Delhi",
     description:
-      "Premium fitness facility in Kalkaji, New Delhi with top-tier equipment, expert coaching, and flexible membership plans.",
+      "Premium fitness facilities in Kalkaji and Jaitpur, New Delhi with top-tier equipment, expert coaching, and flexible memberships.",
     url: siteUrl,
     siteName: "LIV FIT GYM",
     images: [
@@ -53,9 +55,9 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "LIV FIT GYM Kalkaji | Best Gym in Kalkaji, New Delhi",
+    title: "LIV FIT GYM | Kalkaji & Jaitpur, New Delhi",
     description:
-      "Premium fitness facility in Kalkaji, New Delhi with top-tier equipment, expert coaching, and flexible membership plans.",
+      "Premium fitness facilities in Kalkaji and Jaitpur, New Delhi with top-tier equipment, expert coaching, and flexible memberships.",
     images: ["/assets/gymGallery/DSC_0052.jpeg"],
   },
   robots: {
@@ -98,6 +100,19 @@ const localBusinessJsonLd = {
     closes: "22:00",
   },
   priceRange: "₹₹",
+  department: {
+    "@type": "ExerciseGym",
+    name: "LIV FIT GYM Jaitpur",
+    address: {
+      "@type": "PostalAddress",
+      streetAddress:
+        "0-39, First Floor, G868+87F, Hari Nagar Extn, Saurabh Vihar",
+      addressLocality: "Jaitpur, New Delhi",
+      postalCode: "110044",
+      addressRegion: "Delhi",
+      addressCountry: "IN",
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -106,7 +121,9 @@ export default function RootLayout({ children }) {
       <head>
         <script
           type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(localBusinessJsonLd),
+          }}
         />
       </head>
       <body
