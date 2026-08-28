@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  output: "export",
+  devIndicators: false,
   images: {
     unoptimized: true,
     remotePatterns: [
       {
-        protocol: 'https',
-        hostname: 'images.unsplash.com',
+        protocol: "https",
+        hostname: "images.unsplash.com",
       },
     ],
   },
@@ -16,7 +17,7 @@ const nextConfig = {
   },
   // Reduce memory usage during development
   experimental: {
-    optimizePackageImports: ['framer-motion'],
+    optimizePackageImports: ["framer-motion"],
   },
 };
 
