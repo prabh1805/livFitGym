@@ -4,7 +4,9 @@ import { branchesData } from "../data/branchesData";
 
 const LocationSection = () => {
   const [activeBranchIndex, setActiveBranchIndex] = useState(0);
+  const [loadedMapId, setLoadedMapId] = useState(null);
   const activeBranch = branchesData[activeBranchIndex];
+  const isMapLoading = loadedMapId !== activeBranch.id;
 
   const showPreviousBranch = () => {
     setActiveBranchIndex((currentIndex) =>
@@ -143,9 +145,19 @@ const LocationSection = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="w-full lg:w-3/5 min-h-[400px] lg:min-h-full bg-neutral-900 relative"
+            className="w-full lg:w-3/5 min-h-100 lg:min-h-full bg-neutral-900 relative"
+            aria-busy={isMapLoading}
           >
+            {isMapLoading && (
+              <div className="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-neutral-900 text-gray-300">
+                <span className="h-10 w-10 rounded-full border-4 border-neutral-700 border-t-accent animate-spin" />
+                <span className="text-sm font-semibold uppercase tracking-widest">
+                  Loading map
+                </span>
+              </div>
+            )}
             <iframe
+              key={activeBranch.id}
               src={`https://www.google.com/maps?q=${encodeURIComponent(activeBranch.address)}&output=embed`}
               width="100%"
               height="100%"
@@ -161,6 +173,7 @@ const LocationSection = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               title={`${activeBranch.name} map`}
+              onLoad={() => setLoadedMapId(activeBranch.id)}
             ></iframe>
           </motion.div>
         </div>

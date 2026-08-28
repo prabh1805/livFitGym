@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20 md:h-28">
-          <div className="flex-shrink-0 -ml-2 sm:-ml-4">
+          <div className="shrink-0 -ml-2 sm:-ml-4">
             <a href="#home" className="flex items-center">
               <Image
                 src="/assets/livfit_logo_new.svg"
@@ -161,7 +161,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`lg:hidden absolute top-full left-0 w-full bg-[#121212] shadow-xl transition-all duration-300 overflow-hidden ${isOpen ? "max-h-[500px] border-t border-neutral-900" : "max-h-0"}`}
+        className={`lg:hidden absolute top-full left-0 w-full bg-[#121212] shadow-xl transition-all duration-300 overflow-hidden ${isOpen ? "max-h-125 border-t border-neutral-900" : "max-h-0"}`}
       >
         <div className="px-4 py-4 space-y-2 pb-6 flex flex-col items-center">
           {navLinks.map((link) => (
